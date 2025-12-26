@@ -33,8 +33,7 @@ a {
 
 .card {
   font-family: 'Heebo';
-  --bg-filter-opacity: 0.5;
-  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  /*background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);*/
   height: 20em;
   width: 15em;
   font-size: 1.5em;
@@ -54,6 +53,19 @@ a {
   text-decoration: none;
 }
 
+.card-grid-space:nth-child(1) .card{
+  --bg-filter-opacity: 0.5;
+  background-image:linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))),url('https://codewithfaraz.com/img/squid-game-loader.png');
+}
+
+.card-grid-space:nth-child(2) .card{
+  --bg-filter-opacity: 0.5;
+  background-image:url('https://codewithfaraz.com/img/glowing.png');
+}
+.card-grid-space:nth-child(3) .card{
+  --bg-filter-opacity: 0.5;
+    background-image:url('https://codewithfaraz.com/img/digitalclock.png')
+}
 .card:hover {
   transform: rotate(0);
 }
